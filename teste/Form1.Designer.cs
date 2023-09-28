@@ -37,12 +37,13 @@
             dt_nascimento = new DateTimePicker();
             aniversario = new Label();
             bd_limpar = new Button();
+            bd_professor = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // bd_Salvar
             // 
-            bd_Salvar.Location = new Point(679, 332);
+            bd_Salvar.Location = new Point(443, 299);
             bd_Salvar.Name = "bd_Salvar";
             bd_Salvar.Size = new Size(75, 23);
             bd_Salvar.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             // tx_nome
             // 
-            tx_nome.Location = new Point(105, 61);
+            tx_nome.Location = new Point(65, 66);
             tx_nome.Name = "tx_nome";
             tx_nome.Size = new Size(146, 23);
             tx_nome.TabIndex = 1;
@@ -60,7 +61,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(43, 64);
+            label1.Location = new Point(21, 69);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 2;
@@ -69,7 +70,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(43, 129);
+            label2.Location = new Point(21, 126);
             label2.Name = "label2";
             label2.Size = new Size(55, 15);
             label2.TabIndex = 3;
@@ -77,7 +78,7 @@
             // 
             // tx_profissao
             // 
-            tx_profissao.Location = new Point(113, 126);
+            tx_profissao.Location = new Point(82, 118);
             tx_profissao.Name = "tx_profissao";
             tx_profissao.Size = new Size(146, 23);
             tx_profissao.TabIndex = 4;
@@ -85,7 +86,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(392, 72);
+            dataGridView1.Location = new Point(21, 217);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(362, 150);
@@ -94,7 +95,7 @@
             // 
             // dt_nascimento
             // 
-            dt_nascimento.Location = new Point(113, 212);
+            dt_nascimento.Location = new Point(91, 170);
             dt_nascimento.Name = "dt_nascimento";
             dt_nascimento.Size = new Size(231, 23);
             dt_nascimento.TabIndex = 6;
@@ -102,7 +103,7 @@
             // aniversario
             // 
             aniversario.AutoSize = true;
-            aniversario.Location = new Point(43, 218);
+            aniversario.Location = new Point(21, 176);
             aniversario.Name = "aniversario";
             aniversario.Size = new Size(64, 15);
             aniversario.TabIndex = 7;
@@ -110,7 +111,7 @@
             // 
             // bd_limpar
             // 
-            bd_limpar.Location = new Point(392, 332);
+            bd_limpar.Location = new Point(443, 170);
             bd_limpar.Name = "bd_limpar";
             bd_limpar.Size = new Size(75, 23);
             bd_limpar.TabIndex = 8;
@@ -118,11 +119,22 @@
             bd_limpar.UseVisualStyleBackColor = true;
             bd_limpar.Click += bd_limpar_Click;
             // 
+            // bd_professor
+            // 
+            bd_professor.Location = new Point(443, 235);
+            bd_professor.Name = "bd_professor";
+            bd_professor.Size = new Size(75, 23);
+            bd_professor.TabIndex = 9;
+            bd_professor.Text = "professor";
+            bd_professor.UseVisualStyleBackColor = true;
+            bd_professor.Click += bd_professor_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(557, 397);
+            Controls.Add(bd_professor);
             Controls.Add(bd_limpar);
             Controls.Add(aniversario);
             Controls.Add(dt_nascimento);
@@ -150,5 +162,6 @@
         private DateTimePicker dt_nascimento;
         private Label aniversario;
         private Button bd_limpar;
+        private Button bd_professor;
     }
 }

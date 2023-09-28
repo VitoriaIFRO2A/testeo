@@ -19,13 +19,23 @@ namespace teste
         {
             DateTime datanascimento = Convert.ToDateTime(dt_nascimento.Text);
             Pessoa pessoa = new Pessoa(tx_nome.Text, tx_profissao.Text, datanascimento);
-          
+
             pessoas.Add(pessoa);
+
+            dataGridView1.DataSource = null;
+            dataGridView1.Refresh();
+            dataGridView1.DataSource = pessoas;
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView1.DataSource = 
+
+        }
+
+        private void bd_professor_Click(object sender, EventArgs e)
+        {
+            Profes profes = new Profes();
+            profes.ShowDialog();
         }
     }
 }
